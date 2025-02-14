@@ -3,7 +3,7 @@ const sequelize = require('../../database');
 
 const Aluno = sequelize.define('Aluno', {
 	idaluno: {
-		type: DataType.INTEGER,
+		type: DataTypes.INTEGER,
 		autoIncrement: true,
 		primaryKey: true
 	},
