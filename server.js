@@ -8,6 +8,9 @@ sequelize.sync()
     .then(() => {  
         console.log('BD Acessado')
     })
+    .catch(err => {
+        console.error('Falha ao conectar com o BD', err);
+    });
 
 app.listen(port);
 
