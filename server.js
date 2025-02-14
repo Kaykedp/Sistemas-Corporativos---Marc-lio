@@ -1,8 +1,8 @@
 var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000;
-const sequelize = require('../database');
-const Aluno = require('./models/Aluno')
+const sequelize = require('./database');
+const Aluno = require('./models/alunoModel')
 
 sequelize.sync()
     .then(() => {  
